@@ -11,15 +11,15 @@ A personal portfolio website built and developed by me to be used supplementally
 Use any text editor or IDE to view and edit code. I used Visual Studios Code.
 
 ## Front-End Compiling
-View the running code either by pulling it open in a web browser or through your IDE.
+View the compiled code either by pulling it open in a web browser or through your IDE.
 
 ## Files & directories
 - css/.. - Folder for all relevant CSS files.
 - img/.. - Folder for all image files used.
-- js/.. - Folder for all relevant JS files.
+- js/.. - Folder for all relevant JavaScript files.
 - index.html - Website home page.
-- README.md - This file.
-- Justin Schneider Resume.pdf - A direct link to my resume for interested parties to view.
+- README.md - The file you are reading right now.
+- Justin Schneider Resume.pdf - A direct link to my resume for interested parties.
 
 _All other .html files are pages dedicated to individual items in the portfolio section._
 
