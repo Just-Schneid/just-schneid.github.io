@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Justin Schneider: Virtual Networking</title>
+
+        <!-- Imported Stylesheets via cdnjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Imported Fonts via Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+
+        <!-- Local Imports -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/m-02.png">
+    </head>
+    
+    <body>
+        <header>
+            <!-- Website Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="img/m-01.png" alt=""></a>
+            </div>
+
+            <!-- Navigation Button & Menu -->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Project Title & Details -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Collegiate Project:<strong>Virtual Networking</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A Complete Digitally Emulated Network</p>
+            <img src="img/pf-04.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>During my junior year at Liberty University, I was given the opportunity to collaborate with a team on a project to design and implement a functioning virtual computer network.
+                This project was to give experience to students in setting up and administering computer networks without needing the physical hardware as well as the money and physical space that they require.
+                The team was composed of five individuals, with no set person being a team leader.
+            </p>
+            <img src="img/bg-04.jpg" alt="">
+
+            <p>The goal of this project was to create a fully functioning computer network for a fictional company with two separate buildings, an administration building and a production building, set several miles
+                apart. The administration building would have two separate office areas, as well as a basement server room. In the production building, there is only one open area that requires internet 
+                connection as opposed to the three separate areas that the administration building requires. Lastly, there would need to be separate WAN access enabled for remote access to the company's network.
+            </p>
+
+            <p>To create and emulate this network virtually, we used Cypherpath's Software Defined Infrastructure (SDI) system. This is a cloud-based operating system that allows both the creation of
+                abstract network infrastructure and the emulation of said network structure by allowing real-time access to virtual machines placed within the SDI system. The SDI system acts as a sort of
+                workbench for creating a network, allowing you to place routers, switches, hubs, firewalls, virtual machines, servers, etc., while also allowing you to change the properties of the network as
+                needed to build your desired network architecture. Below is the diagram of our final product as shown in the Cypherpath SDI system.
+            </p>
+
+            <img src ="img/bg-04-02.jpg" alt="">
+
+            <p>When creating our network within the SDI system, we tackled the needs of the administration building first, as this was the primary building of business operations. The first thing we set up within the 
+                administration building was a VyOS router and switches for all of our connections: two switches for the office areas, one switch for the server basement, and another switch to connect to a
+                future firewall. Both of the office areas had five Kali Linux machines connected to their respective switches, while the basement switch had two Ubuntu Linux servers connected to it. Lastly, we then 
+                set up our pfSense firewall connected to the last administration building switch, with another Kali Linux machine connected on the same switch to establish firewall rules and to look through any logs 
+                recorded from the firewall.
+            </p>
+
+            <p>The next building we tackled was the production building, which is theoretically stationed several miles apart. To establish same-network access between the two buildings, a hub was established from 
+                the firewall to the VyOS router this building would house. A Kali Linux machine was then attached to the hub to sniff packets for security purposes. Next, a single switch was then connected to the 
+                router  with four machines connected to it: two programmable logic controllers (PLCs) and two Kali Linux machines that could be used for either human-machine interfaces (HMI), supervisory control and 
+                data acquisition (SCADA), and/or distributed control systems (DCS).
+            </p>
+
+            <p>Finally, we set up the network's WAN access. We accomplished this by setting up an external dedicated WAN switch to the firewall connected to two systems- a Kali Linux machine and an Ubuntu server.
+                These machines would allow designated individuals to remote in and access the network directly, while also collectively connecting the entire network to the internet. With this we completed the
+                design of the company's full network as instructed, achieving all of the connectivity needs of the company.
+
+            </p>
+        
+        </div>
+        
+        
+        <!-- Contact Me Footer -->
+        <footer class="footer" id="contact">
+            <a class="footer__title">Contact Me</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="Justin Schneider Resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:jschneider3@protonmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/justschneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Just-Schneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://stackoverflow.com/users/18432773/justin-s" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-stack-overflow"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://app.hackthebox.com/profile/968965" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-cube"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        <!-- JavaScript Import -->
+        <script src="js/index.js"></script>
+    </body>
+</html>

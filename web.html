@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Justin Schneider: This Website</title>
+
+        <!-- Imported Stylesheets via cdnjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Imported Fonts via Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+
+        <!-- Local Imports -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/m-02.png">
+    </head>
+    
+    <body>
+        <header>
+            <!-- Website Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="img/m-01.png" alt=""></a>
+            </div>
+
+            <!-- Navigation Button & Menu -->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Project Title & Details -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Personal Project:<strong>This Website</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">My Personal Portfolio</p>
+            <img src="img/pf-01.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This website you are currently viewing was developed and built by me! I originally created it as a portfolio/CV to supplement my resume in providing more information about me, my skills and interests, 
+                and my work.</p>
+            <img src="img/bg-01.jpg" alt="">
+
+            <p>I built this website primarily using HTML and CSS, and some JavaScript was added in to create the navigation menu. All development and testing was completed using Visual Studio Code, 
+                with future changes to be published using Git. This website is currently hosted on GitHub Pages for free.</p>
+
+            <p>Since the entire purpose of this website is to be a supplemental portfolio to my resume, it will be updated on a regular basis with any new projects that I have finished working on. Additionally,
+                any relevant and useful lessons that have been learned from working on said projects will be noted.</p>
+        </div>
+        
+        
+        <!-- Contact Me Footer -->
+        <footer class="footer" id="contact">
+            <a class="footer__title">Contact Me</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="Justin Schneider Resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:jschneider3@protonmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/justschneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Just-Schneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://stackoverflow.com/users/18432773/justin-s" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-stack-overflow"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://app.hackthebox.com/profile/968965" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-cube"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        <!-- JavaScript Import -->
+        <script src="js/index.js"></script>
+    </body>
+</html>

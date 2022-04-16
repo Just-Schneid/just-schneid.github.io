@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Justin Schneider: Portfolio</title>
+
+        <!-- Imported Stylesheets via cdnjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Imported Fonts via Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+
+        <!-- Local Imports -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/m-02.png">
+    </head>
+    
+    <body>
+        <header>
+            <!-- Website Logo -->
+            <div class="logo">
+                <a href="#home"><img src="img/m-01.png" alt=""></a>
+            </div>
+
+            <!-- Navigation Button & Menu -->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introducing Myself / Home -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, I am <strong>Justin Schneider</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">SOFTWARE ENGINEER</p>
+            <img src="img/hm-01.jpg" alt="Head shot of Justin smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My Skills -->
+        <section class="my-skills" id="skills">
+            <h2 class="section__title section__title--skills">My Skills</h2>
+            <div class="skills">
+                <div class="skill"> 
+                    <h3>Software Engineering</h3>
+                    <p>With a background in programming, I have experience using C++, Java, and Python. I have a firm understanding of object-oriented programming principles as well as standard software engineering 
+                        practices.
+                    </p>
+                </div> 
+                
+                <div class="skill">
+                    <h3>Cyber-Security</h3>
+                    <p>I also have knowledge and experience of the cyber-security field to apply secure coding principles to the software that I produce. I have experiences with networking, penetration testing, 
+                        scripting, and virtualization.
+                    </p>
+                </div>
+                
+                <div class="skill">
+                    <h3>Database Administration</h3>
+                    <p>I am well-versed in database management systems and how to design, administer, and manage databases. Knowledgeable of database optimization practices such as normalization and query 
+                        optimization.
+                    </p>
+                </div>
+            </div>
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About Me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who Am I?</h2>
+           <p class="section__subtitle section__subtitle--about">Computer Science: Cyber-Security Graduate</p>
+           
+           <div class="about-me__body">
+               <p>Hello! I am a recent computer science graduate from Liberty University with a degree in cyber-security. I was born and raised in Florida with a passion for tech and all the opportunities that it
+                   offers us. Now based in Wilmington, North Carolina, I am constantly looking for opportunities to challenge myself and expand my skillset. I enjoy creating solutions to problems with my software
+                    while keeping all of my code scalable and well-documented.
+                </p>
+               <p>While my career has only recently started, I have already had the pleasure to work on multiple projects during my college career, including the opportunity to work with the DHS! Feel free to
+                   check out some of my previous projects and experiences down below! I look forward to the opportunity to work with you.
+                </p>
+           </div>
+           
+           <img src="img/hm-03.png" alt="Justin smiling in front of a tree" class="about-me__img">
+        </section>
+        
+        <!-- Project Portfolio -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">Projects</h2>
+            <p class="section__subtitle section__subtitle--work">A Selection of My Previous Work</p>
+            
+            <div class="portfolio">
+                <!-- Project 01: HTML Experience -->
+                <a href="web.html" class="portfolio__item">
+                    <img src="img/pf-01.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Project 02: DHS-CINA Capstone -->
+                <a href="capstone.html" class="portfolio__item">
+                    <img src="img/pf-02.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Project 03: SQL Experience -->
+                <a href="dbms.html" class="portfolio__item">
+                    <img src="img/pf-03.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Project 04: Networking -->
+                <a href="network.html" class="portfolio__item">
+                    <img src="img/pf-04.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        
+        <!-- Contact Me Footer -->
+        <footer class="footer" id="contact">
+            <a class="footer__title">Contact Me</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="Justin Schneider Resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:jschneider3@protonmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/justschneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Just-Schneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://stackoverflow.com/users/18432773/justin-s" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-stack-overflow"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://app.hackthebox.com/profile/968965" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-cube"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        <!-- JavaScript Import -->
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Justin Schneider: DHS Capstone</title>
+
+        <!-- Imported Stylesheets via cdnjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Imported Fonts via Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+
+        <!-- Local Imports -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/m-02.png">
+    </head>
+    
+    <body>
+        <header>
+            <!-- Website Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="img/m-01.png" alt=""></a>
+            </div>
+
+            <!-- Navigation Button & Menu -->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Project Title & Details -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Capstone Project:<strong>Opioid Abuse Detection System</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Detection System Against the U.S. Opioid Abuse Epidemic</p>
+            <img src="img/pf-02.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>During my senior year at Liberty University, I had the opportunity to work directly with the Department of Homeland Security (DHS) and their Criminal Investigations and Network
+                Analysis (CINA) center on a <a href="https://cina.gmu.edu/projects/an-extensible-criminal-predictive-analytic-platform-cpap-for-opioid-abuse-detection-and-prediction/" target="_blank" rel="noopener noreferrer">project</a> 
+                to help confront the escalating opioid abuse crisis that the United States is facing. This sudden rise in deaths caused by overdose has been rapidly accelerating ever since 2013, 
+                with <a href= "https://nida.nih.gov/drug-topics/trends-statistics/overdose-death-rates" target="_blank" rel="noopener noreferrer">2020 alone having nearly 92,000 deaths caused by opioid overdose.</a> 
+                With this annual rate steadily climbing, the DHS has been testing ideas for systems to help combat this epidemic.
+            </p>
+            <img src="img/bg-02.jpg" alt="">
+
+            <p>One of these ideas proposed by the DHS CINA center was picked up by Liberty University, and a prototype was developed over the course of nearly 2 years. The idea was to create a 
+                system that would scrape data off of social media posts and comments in real time which confirmed the use of opioids in a given geolocation. Using this data, trends could be 
+                noticed to detect when an outbreak of opioid abuse was currently occurring and when a future outbreak is imminent. The ability to see current and potential future opioid outbreaks
+                would help the DHS be able to more efficiently confront the opioid crisis.
+            </p>
+
+            <p>When I joined the project for my capstone in August 2020, not much work had been accomplished in developing the prototype, but social media streams and data provider queries were fully developed 
+                and ready for use. The project team that I joined was therefore tasked with constructing the prototype so that it could be both used and presented for demonstration purposes. Additionally, we were to
+                test the overall security of the developed prototype and report any found vulnerabilities as research for future development.
+            </p>
+
+            <p>To create this prototype, me and my team set up over a dozen virtual machines that were connected on a private virtual network. All of these machines were hosted by a server on-site at the university,
+                and they each had an important role in creating the desired product. Some of these machines were responsible for automatically scraping procedurally-generated data from a separate machine that was
+                generating such data from a purchased, open-source, and false dataset. We used a dataset rather than real data so there would be no real identities or corresponding information discovered in our 
+                project should the server hosting the prototype ever be infiltrated. Other machines utilized distributed computing to process this data, which was passed off to other machines to generate graphs of 
+                the data and perform graph analysis. These graphs would reveal the traffic of individuals abusing opioids as well as their general location to confirm whether an opioid outbreak was currently
+                occurring or was imminent in specific neighborhoods. I cannot go into too much detail concerning the specific technologies used to accomplish this as the DHS is planning on using the same software 
+                solutions that we implemented, so I have signed an NDA against disclosing more specific details.
+            </p>
+
+            <p>Once the prototype was developed, research was performed to see how accurate a system like this could be in achieving its goal. The model using the generated data was able to accurately
+                predict opioid outbreak zones in real time as the data was being scraped. Additionally, one of the project managers developed their own version of the prototype separate from ours, hosted on a 
+                separate server. We then performed penetration testing on both our own prototype and the project manager's prototype to report and outline any potential security vulnerabilities that the DHS may want
+                to be cautious of when adapting their own version of this project.
+            </p>
+
+        </div>   
+        
+        <!-- Contact Me Footer -->
+        <footer class="footer" id="contact">
+            <a class="footer__title">Contact Me</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="Justin Schneider Resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:jschneider3@protonmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/justschneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Just-Schneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://stackoverflow.com/users/18432773/justin-s" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-stack-overflow"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://app.hackthebox.com/profile/968965" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-cube"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        <!-- JavaScript Import -->
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Justin Schneider: Database Project</title>
+
+        <!-- Imported Stylesheets via cdnjs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- Imported Fonts via Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+
+        <!-- Local Imports -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/m-02.png">
+    </head>
+    
+    <body>
+        <header>
+            <!-- Website Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="img/m-01.png" alt=""></a>
+            </div>
+
+            <!-- Navigation Button & Menu -->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Project Title & Details -->
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Collegiate Project:<strong>Database Implementation</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">The Database Lifecycle in a Healthcare Scenario</p>
+            <img src="img/pf-03.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>In my junior year of college, I had the opportunity to work on an extensive project to design, administer, fill, and manage a complete database. This project called for a database to be
+                developed for a fictional home healthcare company located in Virginia. This database would act as a comprehensive scheduling system for the company's previous and future medical visits and any 
+                important details concerning these visits, such as treatments conducted, medical personnel conducting these treatments, payment information, etc. The team was composed of three people, with myself 
+                taking the role of team lead for this project.
+            </p>
+            <img src="img/bg-03.jpg" alt="">
+
+            <p>The timeline to fulfill this project was broken into three separate phases. The first phase was dedicated to the conceptual design of the database based off a description given of the healthcare
+                company and all company-conducted operations, which were laid out in an extensive document. My team and I created an entity relationship diagram (ERD) for all the tables we believe the
+                database would need and the relationships these tables would have when interacting with each other. We also described in detail how each of the columns would be used within the tables, as well
+                as what type of data each column should hold.
+            </p>
+
+            <p>For the second phase of the project, additional information was presented to us about the company that was previously withheld and required decent revisions to the ERD. These revisions
+                required us to not only change the established tables and relationships, but to add supplemental tables and relationships to the diagram as well. Once the ERD was revised to have all necessary 
+                tables, columns, and relationships, a database was created in SQL Server implementing all previously mentioned parameters. Each table was given relevant constraints to the columns and filled with 
+                three sample rows of data each for testing as we were not yet given the real data that would fill the database.
+            </p>
+
+            <p>In the final phase of the project, we were now given a spreadsheet of the company's previous scheduling system which held tens of thousands of rows and dozens of columns of dirty data that needed to 
+                be normalized before being brought over to the database. All of the data was brought to Boyce-Codd Normal Form (BCNF/4NF) standards using MS Excel formulas, and then transferred over to MS Access
+                for easy transfer over to SQL Server. The final result once it was all brought over to SQL Server was a database with over 94,500 rows of data scattered across 26 individual tables. The completed
+                product was not only a scheduling system for the home healthcare company, but was also entirely capable of tracking anything related to the medical visits such as supplies/inventory used, payment due,
+                and other vital information. This made it a complete database for any information the company may require.
+            </p>
+
+        </div>
+        
+        
+        <!-- Contact Me Footer -->
+        <footer class="footer" id="contact">
+            <a class="footer__title">Contact Me</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="Justin Schneider Resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:jschneider3@protonmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/justschneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Just-Schneid" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://stackoverflow.com/users/18432773/justin-s" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-stack-overflow"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://app.hackthebox.com/profile/968965" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-cube"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        <!-- JavaScript Import -->
+        <script src="js/index.js"></script>
+    </body>
+</html>
